@@ -1,0 +1,23 @@
+{
+  "name": "mvblm",
+  "version": "1.0.0",
+  "description": "Mission Viejo for Black Lives Matter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aidantjones/mvblm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aidantjones/mvblm/issues"
+  },
+  "homepage": "https://github.com/aidantjones/mvblm#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
