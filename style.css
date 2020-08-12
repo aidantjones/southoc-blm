@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "exo";
+  src: url("/assets/fonts/exo/exo.ttf");
+}
+
+@font-face {
+  font-family: "exo";
+  src: url("/assets/fonts/exo/exo-italic.ttf");
+  font-style: italic;
+}
+
+:root {
+  --text-white: rgba(255, 255, 255, 0.85);
+  --yellow: rgba(232, 209, 0, 1);
+}
+
+* {
+  font-family: exo, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+.home header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+  width: 100%;
+}
+
+.home header img {
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 3;
+  object-fit: cover;
+}
+
+.home header h1 {
+  grid-column: 2 / span 4;
+  grid-row: 3 / span 1;
+  text-shadow: 3px 3px var(--yellow);
+  display: flex;
+  align-items: center;
+  font-size: 7.5vmin;
+  font-variation-settings: 'wght' 650;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.home header h1 mark {
+  background-color: black;
+  padding: 1rem 2rem;
+  color: var(--text-white);
+}
+
+.home .gallery img {
+  width: 100%;
+  display: block;
+}
+
+.home textarea {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.home main {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+.home .info > * {
+  margin: 0 1rem;
+}
+
+.home .info {
+  margin: 4rem 0;
+}
+
+.home .info h2 {
+  font-variation-settings: 'wght' 650;
+  text-transform: uppercase;
+  color: var(--text-white);
+  text-shadow: 1px 1px var(--yellow);
+  margin: 2rem 1rem;
+  border-bottom: 4px solid var(--yellow);
+  box-shadow: 0 4px 2px -2px white;
+}
+
+.home .info h3 {
+  font-variation-settings: 'wght' 500;
+}
+
+.home .info > ul,
+.home .info > ol > li {
+  font-variation-settings: 'wght' 600;
+}
+
+.home .info > ol > li > ul,
+.home .info > ul > li > ul,
+.home .info > ul > li {
+  font-variation-settings: 'wght' 400;
+}
+
+.home form {
+  margin-top: 1rem;
+}
+
+.home form label {
+  display: none;
+}
+
+.home form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  transition: 0.2s;
+  color: white;
+  background-color: black;
+  font-size: 1.25rem;
+}
+
+.home form select {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.home form input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.home form input:focus {
+  outline: none;
+  transition: 0.2s;
+  border-bottom: 3px solid white;
+}
+
+.home form label[for="interest"] {
+  display: block;
+}
+
+.home form button[type="submit"] {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding: 1rem 3rem;
+  transition: 0.2s;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.home form button[type="submit"]:hover {
+  background-color: white;
+  transition: 0.2s;
+  color: black;
+}
